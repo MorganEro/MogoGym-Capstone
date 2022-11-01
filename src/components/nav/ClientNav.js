@@ -16,6 +16,11 @@ export const ClientNav = () => {
                  className="navbar__link" to="/sessions" 
                 >Your Current Sessions</Link>
             </li>
+            {/* <li className="navbar__item navbar__loginSessions">
+                 <Link 
+                 className="navbar__link" to="/loginSessions" 
+                >Login Sessions</Link>
+            </li> */}
 
             <li className="navbar__item navbar__available">  
                  <Link 
