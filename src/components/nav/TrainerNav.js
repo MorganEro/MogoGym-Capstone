@@ -16,6 +16,11 @@ export const TrainerNav = () => {
                  className="navbar__link" to="/clientList" >Clients</Link>
                
             </li>
+            <li className="navbar__item navbar__trainers">  
+                 <Link 
+                 className="navbar__link" to="/trainerList" >Trainers</Link>
+               
+            </li>
             <li className="navbar__item navbar__availability">
                 <Link className="navbar__link" to="/availability" 
             >Availability</Link>

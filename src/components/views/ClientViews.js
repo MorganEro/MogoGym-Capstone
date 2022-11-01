@@ -1,7 +1,9 @@
 import { Outlet, Route, Routes } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { ClientSessionEdit } from "../sessions/ClientSessionEdit"
+
 import { AvailableSessionsList } from "../sessions/AvailableSessions"
+import { ClientSession } from "../sessions/ClientSession"
+import { LoginSessions } from "../sessions/LoginSessions"
 
 
 export const ClientViews= () => {
@@ -33,7 +35,9 @@ export const ClientViews= () => {
 			</>
 		} />
 		<Route path="available" element={ <AvailableSessionsList/> } />
-		<Route path="sessions" element={ <ClientSessionEdit /> } />
+		{/* <Route path="loginSessions" element={ <LoginSessions/> } /> */}
+		<Route path="sessions" element={ <ClientSession /> } />
+		{/* <Route path="sessions/:id" element={ <ClientSession /> } /> */}
 		
 	</Routes>
 	)

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Outlet, Route, Routes } from "react-router-dom"
 import { ClientList } from "../clients/ClientList"
 import { TrainerAvailabilityCreate } from "../sessions/TrainerAvailibiltyCreate"
+import { TrainerList } from "../trainers/TrainerList"
 
 export const TrainerViews = () => {
 
@@ -18,6 +19,8 @@ export const TrainerViews = () => {
             }) 
         }, [mogoUserObject.id]
     ) 
+
+
     return (
         <Routes>    
             <Route path="/" element= {
@@ -29,8 +32,9 @@ export const TrainerViews = () => {
                 
                 </>
             } />
-            <Route path="clients" element={ <ClientList /> } />
-            <Route path="available" element={ <TrainerAvailabilityCreate /> } />
+            <Route path="clientList" element={ <ClientList /> } />
+            <Route path="trainerList" element={ <TrainerList /> } />
+            <Route path="availability" element={ <TrainerAvailabilityCreate /> } />
             
         </Routes>
         )
